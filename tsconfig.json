@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM"
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ],
+      "*" : ["server-middleware/*"]
+    },
+    "types": [
+      "@nuxt/types",
+      "@types/node",
+      "@types/express",
+      "@types/express-session",
+      "nuxt-leaflet"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "outDir": "tsdist"
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
+  ]
+}
